@@ -10,16 +10,12 @@ int consul();
 int rm();
 int load();
 
-// Váriaveis em um "banco de dados"
+//Variáveis globais
 typedef struct{
     char nome[50];
     char phone[14];
 } Contato;
-
-// variável do tipo Contato
 Contato contato;
-
-// variável de opção
 int op;
 
 // menu de ações
