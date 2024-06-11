@@ -53,7 +53,7 @@ funções criadas e puxadas em seus devidos locais
 `FILE` é uma função da biblioteca C que trabalha com arquivos<br>
 `FILE *` aponta para um arquivo específico, definido pelo usuário<br><br>
 
-<b>EXEMPLO:</b>
+<b>EXEMPLO:</b><br>
 `FILE *arquivo`<br>
 `arquivo = fopen("meuArquivo.bin","rb")`<br><br>
 
