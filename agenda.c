@@ -1,6 +1,7 @@
 // bibliotecas
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 // prototipagem de funcs
 int menu();
