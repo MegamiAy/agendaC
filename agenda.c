@@ -35,7 +35,6 @@ int menu(){
             printf("Esta opcao nao existe");
             break;
     }
- 
     return op;
 } 
 
@@ -62,9 +61,21 @@ int add(){
 
 // listar/ler contatos existentes
 int consul(){
-    // n sei como faço a consulta... vou pesqu um pouco
-    // ideias?
+    int phone[11];
+    char nome[50];
+    FILE *fptr;
+    if ((fptr = fopen("contatos.txt","r")) == NULL) {
+        printf("Erro ao abrir arquivo!\n");
+        exit(1);
+    }
+    fscanf(fptr, "%c", &nome[50]);
+    fscanf(fptr, "%i", &phone[11]);
+    printf("Nome: %s\n", nome);
+    printf("Telefone: %i\n\n", phone);
+    fclose(fptr);
+    return 0;
 }
+        
 
 // remover um contato existente
 int rm(){
