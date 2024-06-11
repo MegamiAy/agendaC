@@ -73,7 +73,7 @@ int consul(){
     fscanf(fptr, "%s", phone);
     printf("Nome: %s\n", nome);
     printf("Telefone: %s\n\n", phone);
-    fclose(fptr);4
+    fclose(fptr);
     return 0;
 }
         
