@@ -51,7 +51,7 @@ int add(){
     scanf("%s", nome);
     fflush(stdin);
     printf("Telefone: ");
-    fscanf("%d", &phone);
+    scanf("%d", &phone);
     fflush(stdin);
     fprintf(fptr, "Nome: %s \nNumero: %d \n", nome, phone);
     fclose(fptr);
