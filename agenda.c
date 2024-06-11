@@ -9,10 +9,12 @@ int consul();
 int rm();
 int load();
 
+// teste que funcionou
+char nome[50];
+int phone, op;
+
 // menu de ações
 int menu(){
-    int op;
-    
     printf("Escolha qual vai ser sua acao nos contatos:\n 1. Adicionar\n 2. Pesquisar\n 3. Remover\n 4. Sair\n");
     scanf("%i", &op);
     
@@ -38,8 +40,6 @@ int menu(){
 
 // incluir um novo contato
 int add(){
-    char nome[50];
-    int phone;
     FILE *fptr;
     fptr = fopen("contatos.txt", "a");
     if (fptr == NULL) {
@@ -61,8 +61,6 @@ int add(){
 
 // listar/ler contatos existentes
 int consul(){
-    char nome[50];
-    int phone;
     FILE *fptr;
     if ((fptr = fopen("contatos.txt","r")) == NULL) {
         printf("Erro ao abrir arquivo!\n");
@@ -84,13 +82,11 @@ int rm(){
 
 // carregar na tela os ctts existentes
 int load(){
-    // ctz q tem que ter isso?
+    
 }
 
 // func principal, raiz... onde vai ser tudo jogado, bjs
  int main(){
-    int op;
-    
     do {
         op = menu();
     } while (op !=4);
