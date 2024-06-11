@@ -1,0 +1,66 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// prototipagem de funcs
+int menu();
+int add();
+int consul();
+int rm();
+
+// opções de ações
+int menu(){
+    int op;
+    
+    printf("Escolha qual vai ser sua acao nos contatos:\n 1. Adicionar\n 2. Pesquisar\n 3. Remover\n 4. Sair\n");
+    scanf("%i", &op);
+    
+    switch(op){
+        case 1:
+            add();
+            break;
+        case 2:
+            consul();
+            break;
+        case 3:
+            rm();
+            break;
+        case 4:
+            printf("Saindo do programa...");
+            break;
+        default:
+            printf("Esta opcao nao existe");
+            break;
+    }
+ 
+    return op;
+} 
+
+// incluir um novo contato
+int add(){
+    
+}
+
+// listar/ler contatos existentes
+int consul(){
+    
+}
+
+// remover um contato existente
+int rm(){
+    
+}
+
+
+ int main(){
+    int op;
+    
+    do {
+        op = menu();
+    } while (op !=4);
+        // dependendo da opção escolhida:
+        // add
+        // consul
+        // rm
+
+    return 0;
+}
