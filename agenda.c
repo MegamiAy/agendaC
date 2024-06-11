@@ -16,6 +16,12 @@ typedef struct{
     char phone[14];
 } Contato;
 
+// variável do tipo Contato
+Contato contato;
+
+// variável de opção
+int op;
+
 // menu de ações
 int menu(){
     printf("Escolha qual vai ser sua acao nos contatos:\n 1. Adicionar\n 2. Pesquisar\n 3. Remover\n 4. Bonus: Carregar todos\n 5. Sair\n ");
@@ -45,21 +51,24 @@ int menu(){
 
 // incluir um novo contato
 int add(){
-    Contato contato;
     FILE *fptr;
     fptr = fopen("contatos.bin", "ab");
     if (fptr == NULL) {
         printf("Erro ao abrir arquivo!\n");
-        exit(1);
+        return 1;
     }
 
+    //Usuário insere os dados
     printf("Nome do Contato: ");
-    scanf("%s", nome);
+    scanf("%s", contato.nome);
     fflush(stdin);
+
     printf("Telefone: ");
-    scanf("%s", phone);
+    scanf("%s", contato.phone);
     fflush(stdin);
-    fprintf(fptr, "Nome: %s \t Numero: %s \n\n", nome, phone);
+
+    //Salva no arquivo
+    fwrite(&contato, sizeof(Contato), 1, fptr);
     fclose(fptr);
     
     return 0;
@@ -67,15 +76,29 @@ int add(){
 
 // listar/ler contatos existentes
 int consul(){
+    char n_pesq[50];
+    int c_existe = 0;
     FILE *fptr;
-    if ((fptr = fopen("contatos.txt","r")) == NULL) {
+
+    printf("Nome do contato para pesquisar: ");
+    scanf("%s", n_pesq);
+
+    if ((fptr = fopen("contatos.bin","rb")) == NULL) {
         printf("Erro ao abrir arquivo!\n");
-        exit(1);
+        return 1;
     }
-    fscanf(fptr, "%s", nome);
-    fscanf(fptr, "%s", phone);
-    printf("Nome: %s\n", nome);
-    printf("Telefone: %s\n\n", phone);
+    while(fread(&contato, sizeof(Contato), 1, fptr)){
+        if(strcmp(contato.nome, n_pesq) == 0){
+            printf("Nome: %s\nTelefone: %s\n\n", contato.nome, contato.phone);
+            c_existe = 1;
+            break;
+        }
+    }
+    if(c_existe == 0){
+        printf("Contato nao existe...\n");
+        return 1;
+    }
+
     fclose(fptr);
     return 0;
 }
@@ -89,22 +112,23 @@ int rm(){
 // carregar na tela os ctts existentes
 int load(){
     FILE *fptr;
-    fptr = fopen("contatos.txt", "r");
+    fptr = fopen("contatos.bin", "rb");
     if(fptr == NULL){
         printf("Erro ao abrir arquivo!\n");
         exit(1);
     }
     
     printf("Contatos: \n");
-    while(fscanf(fptr, "%s %s", nome, phone) != EOF){      
-        printf("Nome: %s \n Numero: %s \n\n", nome, phone);
+    while(fscanf(fptr, "%s %s", contato.nome, contato.phone) != EOF){      
+        printf("Nome: %s \nNumero: %s \n\n", contato.nome, contato.phone);
     }
 }
 
 // func principal, raiz... onde vai ser tudo jogado, bjs
  int main(){
-    do {
-        op = menu();
+    do{
+        int op;
+        menu();
     } while (op !=5);
 
     return 0;
