@@ -25,3 +25,12 @@ funções criadas e puxadas em seus devidos locais
 ## Função Principal
 
 `Main` - Como principal, onde o menu é chamado e por sua vez, é onde tudo ocorre
+
+## Funções do CANSI
+
+* `fopen()` -> abre um arquivo
+* `fwrite()` -> escreve em um arquivo
+* `fclose()` -> fecha o arquivo
+* `fread` -> lê o arquivo
+* `sizeof()` -> determina tamanho do dado/aloca memória
+* `strcmp()` -> compara duas strings
