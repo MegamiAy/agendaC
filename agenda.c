@@ -39,7 +39,7 @@ int menu(){
 // incluir um novo contato
 int add(){
     char nome[50];
-    int phone;              // troquei telefone por phone, só p encurtar
+    int phone[11];              // troquei telefone por phone, só p encurtar
     FILE *fptr;
     fptr = fopen("contatos.txt", "a");
     if (fptr == NULL) {
