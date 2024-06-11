@@ -13,19 +13,11 @@ int load();
 char nome[50];
 int phone, op;
 
-// func principal, raiz... onde vai ser tudo jogado, bjs
-int main(){
-    load();   
-    do {
-        op = menu();
-    } while (op !=4);
-    return 0;
-}
-
 // menu de ações
 int menu(){
     printf("Escolha qual vai ser sua acao nos contatos:\n 1. Adicionar\n 2. Pesquisar\n 3. Remover\n 4. Sair\n");
-    scanf("%i", &op); 
+    scanf("%i", &op);
+    
     switch(op){
         case 1:
             add();
@@ -61,7 +53,7 @@ int add(){
     printf("Telefone: ");
     scanf("%d", &phone);
     fflush(stdin);
-    fprintf(fptr, "Nome: %s \t Numero: %i \n\n", nome, phone);
+    fprintf(fptr, "Nome: %s \t Numero: %d \n\n", nome, phone);
     fclose(fptr);
     
     return 0;
@@ -96,12 +88,22 @@ int load(){
         printf("Erro ao abrir arquivo!\n");
         exit(1);
     }
-    
+     
     printf("Contatos: \n");
-    fscanf(fptr, "%s %d", nome, &phone);
-    printf("Nome: %s \t Numero: %d \n\n", nome, phone);
-    
+    while(fscanf(fptr, "%s %d", nome, &phone) != EOF){      // enquanto os registros não estiverem no fim do arquivo, n for o último, ele continua dando printf no ctt
+        printf("Nome: %s \n Numero: %d \n\n", nome, phone);
+    }
     
     fclose(fptr);
-    
+}
+
+// func principal, raiz... onde vai ser tudo jogado, bjs
+ int main(){
+    load();
+     
+    do {
+        op = menu();
+    } while (op !=4);
+
+    return 0;
 }
