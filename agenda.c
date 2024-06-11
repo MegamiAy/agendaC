@@ -15,7 +15,7 @@ int phone, op;
 
 // menu de ações
 int menu(){
-    printf("Escolha qual vai ser sua acao nos contatos:\n 1. Adicionar\n 2. Pesquisar\n 3. Remover\n 4. Sair\n");
+    printf("Escolha qual vai ser sua acao nos contatos:\n 1. Adicionar\n 2. Pesquisar\n 3. Remover\n 4. Bonus: Carregar todos\n 5. Sair\n ");
     scanf("%i", &op);
     
     switch(op){
@@ -29,6 +29,9 @@ int menu(){
             rm();
             break;
         case 4:
+            printf("Saindo do programa...");
+            break;
+        case 5:
             printf("Saindo do programa...");
             break;
         default:
@@ -82,28 +85,14 @@ int rm(){
 
 // carregar na tela os ctts existentes
 int load(){
-    FILE *fptr;
-    fptr = fopen("contatos.txt", "r");
-    if(fptr == NULL){
-        printf("Erro ao abrir arquivo!\n");
-        exit(1);
-    }
-     
-    printf("Contatos: \n");
-    while(fscanf(fptr, "%s %d", nome, &phone) != EOF){      // enquanto os registros não estiverem no fim do arquivo, n for o último, ele continua dando printf no ctt
-        printf("Nome: %s \n Numero: %d \n\n", nome, phone);
-    }
     
-    fclose(fptr);
 }
 
 // func principal, raiz... onde vai ser tudo jogado, bjs
  int main(){
-    load();
-     
     do {
         op = menu();
-    } while (op !=4);
+    } while (op !=5);
 
     return 0;
 }
