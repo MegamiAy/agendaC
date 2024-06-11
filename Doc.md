@@ -31,6 +31,6 @@ funções criadas e puxadas em seus devidos locais
 * `fopen()` -> abre um arquivo
 * `fwrite()` -> escreve em um arquivo
 * `fclose()` -> fecha o arquivo
-* `fread` -> lê o arquivo
+* `fread()` -> lê o arquivo
 * `sizeof()` -> determina tamanho do dado/aloca memória
 * `strcmp()` -> compara duas strings
