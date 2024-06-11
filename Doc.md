@@ -47,3 +47,15 @@ funções criadas e puxadas em seus devidos locais
 * `fopen("contatos.bin", "wb")` -> subscreve dados do arquivo binário
 * `fopen("contatos.txt", "r")` -> lê dados do arquivo
 * `fopen("contatos.bin", "rb")` ->  lê dados do arquivo binário
+
+### Manipulação do FILE *arquivo
+
+`FILE` é uma função da biblioteca C que trabalha com arquivos<br>
+`FILE *` aponta para um arquivo específico, definido pelo usuário<br><br>
+
+<b>EXEMPLO:</b>
+`FILE *arquivo`<br>
+`arquivo = fopen("meuArquivo.bin","rb")`<br><br>
+
+No exemplo acima, `arquivo` aponta para a seguinte declaração `fopen("meuArquivo.bin","rb")`, <br>
+com isto, o arquivo `meuArquivo` definido por `arquivo` é aberto.
