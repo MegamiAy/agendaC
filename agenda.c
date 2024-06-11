@@ -4,15 +4,15 @@
 #include <string.h>
 
 // prototipagem de funcs
-int menu(); //menu de ações
-int add(); //incluir um novo contato
-int consul(); //listar/ler contatos a partir do nome
-int rm(); //remover um contato
-int load(); //carregar na tela todos os contatos
+int menu(); 
+int add(); 
+int consul();
+int rm();
+int load();
 
 // declarando as variáveis
-char nome[50], phone[14]; //nome tem 50 caracteres e phone tem 14
-int op; //opção do menu
+char nome[50], phone[14];
+int op;
 
 // menu de ações
 int menu(){
