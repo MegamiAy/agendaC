@@ -4,11 +4,11 @@
 #include <string.h>
 
 // prototipagem de funções
-int menu();     //menu de ações
-int add();      //incluir um novo contato
-int consul();   //listar/ler contatos a partir do nome
-int rm();       //remover um contato
-int load();     //carregar na tela todos os contatos
+int menu();
+int add();
+int consul();
+int rm();
+int load();
 
 // Váriaveis em um "banco de dados"
 typedef struct{

@@ -1,4 +1,5 @@
 # Agenda Eletrônica
+> **Por:** Gabrieli Lembeck & Laiz Detros
 
 Trabalho de Sistemas Operacionais + Fundamentos da Programação: 
 
