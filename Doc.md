@@ -16,3 +16,12 @@
 
 ## Definição dos tipos
 
+`nome` & `telefone` como char, nome com limite e 50 e telefone com limite de 14
+
+## Funções
+
+funções criadas e puxadas em seus devidos locais
+
+## Função Principal
+
+`Main` - Como principal, onde o menu é chamado e por sua vez, é onde tudo ocorre
