@@ -10,7 +10,7 @@ int consul();
 int rm();
 int load();
 
-//Variáveis globais
+// variáveis globais
 typedef struct{
     char nome[50];
     char fone[14];
@@ -54,7 +54,7 @@ int add(){
         return 1;
     }
 
-    //Usuário insere os dados
+    // usuário insere os dados
     printf("Nome do Contato: ");
     scanf("%s", contato.nome);
     fflush(stdin);
@@ -63,7 +63,7 @@ int add(){
     scanf("%s", contato.fone);
     fflush(stdin);
 
-    //Salva no arquivo
+    // salva no arquivo
     fwrite(&contato, sizeof(Contato), 1, fptr);
     fclose(fptr);
     
@@ -120,7 +120,7 @@ int load(){
     }
 }
 
-// func principal, raiz... onde vai ser tudo jogado, bjs
+// função principal, raiz
  int main(){
     do{
         int op;
