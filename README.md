@@ -16,3 +16,7 @@ Trabalho de Sistemas Operacionais + Fundamentos da Programação:
 <a href="https://docs.google.com/document/d/1DCITslQ6j0_osakBMZq3culaubUdvp3jESYYb4h9JPI/edit?usp=sharing">Docs de Colas, Ponteiros</a>
 
 <a href="https://docs.google.com/document/d/1h67pVIHA0RitYJLzBF8emaRSuV-nu1lqkjYoDHuQMqU/edit?usp=sharing">Docs de Colas, Funções</a>
+
+<a href="https://docs.google.com/document/d/1LOIsTXtziyZuwUNDS-EXJkbr_KzIQya7adjo1u5nAY8/edit?usp=sharing">Docs de Colas, Colas Gerais</a>
+
+
