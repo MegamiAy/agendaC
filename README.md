@@ -19,7 +19,7 @@ Trabalho de Sistemas Operacionais + Fundamentos da Programação:
 
 <a href="https://docs.google.com/document/d/1LOIsTXtziyZuwUNDS-EXJkbr_KzIQya7adjo1u5nAY8/edit?usp=sharing">Docs de Colas, Colas Gerais</a>
 
-<a href="https://catolicasc-my.sharepoint.com/:w:/g/personal/gabrieli_lembeck_catolicasc_edu_br/Ec05kPTnliRItbwS3v7voE4BozN1vK5pmy1RYHDbIQr3gw?e=BIfhWj">WExemplos profº, Manipulação de Arquivos e Memória no LINUX (C)</a>
+<a href="https://catolicasc-my.sharepoint.com/:w:/g/personal/gabrieli_lembeck_catolicasc_edu_br/Ec05kPTnliRItbwS3v7voE4BozN1vK5pmy1RYHDbIQr3gw?e=BIfhWj">Exemplos profº, Manipulação de Arquivos e Memória no LINUX (C)</a>
 
 
 
