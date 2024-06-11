@@ -39,7 +39,7 @@ int menu(){
 // incluir um novo contato
 int add(){
     char nome[50];
-    int phone[11];              // troquei telefone por phone, só p encurtar
+    int phone;
     FILE *fptr;
     fptr = fopen("contatos.txt", "a");
     if (fptr == NULL) {
@@ -48,10 +48,12 @@ int add(){
     }
 
     printf("Nome do Contato: ");
-    gets("%s", &nome);              // só troquei de ("%c", &nome[50]) para ("%s", &nome) pq tá lendo uma string, bele?
+    scanf("%s", nome);
+    fflush(stdin);
     printf("Telefone: ");
-    fscanf("%d", phone);            
-    fprintf(fptr, "%s %d", nome, phone);
+    fscanf("%d", &phone);
+    fflush(stdin);
+    fprintf(fptr, "Nome: %s \nNumero: %d \n", nome, phone);
     fclose(fptr);
     
     return 0;
