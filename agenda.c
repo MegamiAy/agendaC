@@ -4,21 +4,20 @@
 #include <string.h>
 
 // prototipagem de funcs
-int menu();
-int add();
-int consul();
-int rm();
-int load();
+int menu(); //menu de ações
+int add(); //incluir um novo contato
+int consul(); //listar/ler contatos a partir do nome
+int rm(); //remover um contato
+int load(); //carregar na tela todos os contatos
 
 // declarando as variáveis
-char nome[50], phone[14];
-int op;
+char nome[50], phone[14]; //nome tem 50 caracteres e phone tem 14
+int op; //opção do menu
 
 // menu de ações
 int menu(){
     printf("Escolha qual vai ser sua acao nos contatos:\n 1. Adicionar\n 2. Pesquisar\n 3. Remover\n 4. Bonus: Carregar todos\n 5. Sair\n ");
     scanf("%i", &op);
-    
     switch(op){
         case 1:
             add();
