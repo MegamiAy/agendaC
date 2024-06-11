@@ -1,3 +1,7 @@
+// 1 - gabi como a gente faz isso: 
+// Persistência de dados: Você deve persistir os dados em um arquivo binário - 2 pontos.
+// ??
+
 #include <stdio.h>
 #include <stdlib.h>
 
