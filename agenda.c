@@ -9,7 +9,7 @@ int consul();
 int rm();
 int load();
 
-// teste que funcionou
+// declarando as variáveis
 char nome[50];
 int phone, op;
 
@@ -53,7 +53,7 @@ int add(){
     printf("Telefone: ");
     scanf("%d", &phone);
     fflush(stdin);
-    fprintf(fptr, "Nome: %s \nNumero: %d \n", nome, phone);
+    fprintf(fptr, "Nome: %s \t Numero: %d \n", nome, phone);
     fclose(fptr);
     
     return 0;
@@ -82,6 +82,14 @@ int rm(){
 
 // carregar na tela os ctts existentes
 int load(){
+    // FILE *fptr;
+    // fptr = fopen("contatos.txt", "r");
+    // if(ftpr == NULL){
+    //     print("Erro ao abrir arquivo!\n");
+    //     exit(1);
+    // }
+    
+    // print("Contatos: \n")
     
 }
 
