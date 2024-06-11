@@ -3,16 +3,18 @@
 #include <stdlib.h>
 #include <string.h>
 
-// prototipagem de funcs
-int menu(); //menu de ações
-int add(); //incluir um novo contato
-int consul(); //listar/ler contatos a partir do nome
-int rm(); //remover um contato
-int load(); //carregar na tela todos os contatos
+// prototipagem de funções
+int menu();     //menu de ações
+int add();      //incluir um novo contato
+int consul();   //listar/ler contatos a partir do nome
+int rm();       //remover um contato
+int load();     //carregar na tela todos os contatos
 
-// declarando as variáveis
-char nome[50], phone[14]; //nome tem 50 caracteres e phone tem 14
-int op; //opção do menu
+// Váriaveis em um "banco de dados"
+typedef struct{
+    char nome[50];
+    char phone[14];
+} Contato;
 
 // menu de ações
 int menu(){
@@ -43,8 +45,9 @@ int menu(){
 
 // incluir um novo contato
 int add(){
+    Contato contato;
     FILE *fptr;
-    fptr = fopen("contatos.txt", "a");
+    fptr = fopen("contatos.bin", "ab");
     if (fptr == NULL) {
         printf("Erro ao abrir arquivo!\n");
         exit(1);
