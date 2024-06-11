@@ -16,7 +16,7 @@
 
 ## Definição dos tipos
 
-`nome` & `telefone` como char, nome com limite e 50 e telefone com limite de 14
+`nome` & `fone` como char, nome com limite e 50 e fone com limite de 14
 
 ## Funções
 

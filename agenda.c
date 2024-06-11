@@ -13,7 +13,7 @@ int load();
 //Variáveis globais
 typedef struct{
     char nome[50];
-    char phone[14];
+    char fone[14];
 } Contato;
 Contato contato;
 int op;
@@ -60,7 +60,7 @@ int add(){
     fflush(stdin);
 
     printf("Telefone: ");
-    scanf("%s", contato.phone);
+    scanf("%s", contato.fone);
     fflush(stdin);
 
     //Salva no arquivo
@@ -85,7 +85,7 @@ int consul(){
     }
     while(fread(&contato, sizeof(Contato), 1, fptr)){
         if(strcmp(contato.nome, n_pesq) == 0){
-            printf("Nome: %s\nTelefone: %s\n\n", contato.nome, contato.phone);
+            printf("Nome: %s\nTelefone: %s\n\n", contato.nome, contato.fone);
             c_existe = 1;
             break;
         }
@@ -115,8 +115,8 @@ int load(){
     }
     
     printf("Contatos: \n");
-    while(fscanf(fptr, "%s %s", contato.nome, contato.phone) != EOF){      
-        printf("Nome: %s \nNumero: %s \n\n", contato.nome, contato.phone);
+    while(fscanf(fptr, "%s %s", contato.nome, contato.fone) != EOF){      
+        printf("Nome: %s \nNumero: %s \n\n", contato.nome, contato.fone);
     }
 }
 
