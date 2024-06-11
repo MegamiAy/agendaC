@@ -1,7 +1,4 @@
-// 1 - gabi como a gente faz isso: 
-// Persistência de dados: Você deve persistir os dados em um arquivo binário - 2 pontos.
-// ??
-
+// bibliotecas
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -10,6 +7,7 @@ int menu();
 int add();
 int consul();
 int rm();
+int load();
 
 // menu de ações
 int menu(){
@@ -79,6 +77,11 @@ int consul(){
 
 // remover um contato existente
 int rm(){
+    
+}
+
+// carregar na tela os ctts existentes
+int load(){
     
 }
 
