@@ -23,5 +23,8 @@ Trabalho de Sistemas Operacionais + Fundamentos da Programação:
 
 <a href="https://www.onlinegdb.com/online_c_compiler#">Online C Compiler, onde testamos</a> <- estamos fazendo este 1/2 da N3 no trabalho... e não é possível instalar uma VM d debian
 
+## Sites de Apoio: 
 
-
+* <a href="https://www.geeksforgeeks.org/perl-eof-end-of-file-function/?ref=gcse">GeeksForGeeks</a> -> este link direciona para página da última pesquisa feita
+* <a href="https://cplusplus.com/reference/clibrary/">C Library</a>
+* <a href="https://pt.stackoverflow.com/questions/527010/manipula%C3%A7%C3%A3o-de-arquivos-em-c">Stack Overflow</a> -> fórum
