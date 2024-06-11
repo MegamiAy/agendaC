@@ -7,7 +7,7 @@ int add();
 int consul();
 int rm();
 
-// opções de ações
+// menu de ações
 int menu(){
     int op;
     
@@ -37,12 +37,29 @@ int menu(){
 
 // incluir um novo contato
 int add(){
+    char nome[50];
+    int phone;              // troquei telefone por phone, só p encurtar
+    FILE *fptr;
+    fptr = fopen("contatos.txt", "a");
+    if (fptr == NULL) {
+        printf("Erro ao abrir arquivo!\n");
+        exit(1);
+    }
+
+    printf("Nome do Contato: ");
+    gets("%s", &nome);              // só troquei de ("%c", &nome[50]) para ("%s", &nome) pq tá lendo uma string, bele?
+    printf("Telefone: ");
+    fscanf("%d", phone);            
+    fprintf(fptr, "%s %d", nome, phone);
+    fclose(fptr);
     
+    return 0;
 }
 
 // listar/ler contatos existentes
 int consul(){
-    
+    // n sei como faço a consulta... vou pesqu um pouco
+    // ideias?
 }
 
 // remover um contato existente
@@ -50,17 +67,13 @@ int rm(){
     
 }
 
-
+// func principal, raiz... onde vai ser tudo jogado, bjs
  int main(){
     int op;
     
     do {
         op = menu();
     } while (op !=4);
-        // dependendo da opção escolhida:
-        // add
-        // consul
-        // rm
 
     return 0;
 }
