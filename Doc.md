@@ -37,9 +37,9 @@ funções criadas e puxadas em seus devidos locais
 
 ### Formas de abrir arquivos
 
-* `fopen("contatos.bin", "a")` -> adiciona dados do arquivo
+* `fopen("contatos.txt", "a")` -> adiciona dados do arquivo
 * `fopen("contatos.bin", "ab")` -> adiciona dados do arquivo binário
-* `fopen("contatos.bin", "w")` -> subscreve dados do arquivo
+* `fopen("contatos.txt", "w")` -> subscreve dados do arquivo
 * `fopen("contatos.bin", "wb")` -> subscreve dados do arquivo binário
-* `fopen("contatos.bin", "r")` -> lê dados do arquivo
+* `fopen("contatos.txt", "r")` -> lê dados do arquivo
 * `fopen("contatos.bin", "rb")` ->  lê dados do arquivo binário
