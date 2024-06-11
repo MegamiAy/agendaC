@@ -85,7 +85,17 @@ int rm(){
 
 // carregar na tela os ctts existentes
 int load(){
+    FILE *fptr;
+    fptr = fopen("contatos.txt", "r");
+    if(fptr == NULL){
+        printf("Erro ao abrir arquivo!\n");
+        exit(1);
+    }
     
+    printf("Contatos: \n");
+    while(fscanf(fptr, "%s %d", nome, &phone) != EOF){      
+        printf("Nome: %s \n Numero: %d \n\n", nome, phone);
+    }
 }
 
 // func principal, raiz... onde vai ser tudo jogado, bjs
