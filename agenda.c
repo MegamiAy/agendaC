@@ -53,7 +53,7 @@ int add(){
     printf("Telefone: ");
     scanf("%d", &phone);
     fflush(stdin);
-    fprintf(fptr, "Nome: %s \t Numero: %d \n", nome, phone);
+    fprintf(fptr, "Nome: %s \t Numero: %d \n\n", nome, phone);
     fclose(fptr);
     
     return 0;
@@ -82,19 +82,26 @@ int rm(){
 
 // carregar na tela os ctts existentes
 int load(){
-    // FILE *fptr;
-    // fptr = fopen("contatos.txt", "r");
-    // if(ftpr == NULL){
-    //     print("Erro ao abrir arquivo!\n");
-    //     exit(1);
-    // }
+    FILE *fptr;
+    fptr = fopen("contatos.txt", "r");
+    if(fptr == NULL){
+        printf("Erro ao abrir arquivo!\n");
+        exit(1);
+    }
     
-    // print("Contatos: \n")
+    printf("Contatos: \n");
+    fscanf(fptr, "%s %d", nome, &phone);
+    printf("Nome: %s \t Numero: %d \n\n", nome, phone);
+    
+    
+    fclose(fptr);
     
 }
 
 // func principal, raiz... onde vai ser tudo jogado, bjs
  int main(){
+    load();
+     
     do {
         op = menu();
     } while (op !=4);
