@@ -39,7 +39,7 @@ int menu(){
 // incluir um novo contato
 int add(){
     char nome[50];
-    int phone[11];
+    int phone;
     FILE *fptr;
     fptr = fopen("contatos.txt", "a");
     if (fptr == NULL) {
@@ -51,7 +51,7 @@ int add(){
     scanf("%s", nome);
     fflush(stdin);
     printf("Telefone: ");
-    scanf("%d", &phone[11]);
+    scanf("%d", &phone);
     fflush(stdin);
     fprintf(fptr, "Nome: %s \nNumero: %d \n", nome, phone);
     fclose(fptr);
@@ -61,15 +61,15 @@ int add(){
 
 // listar/ler contatos existentes
 int consul(){
-    int phone[11];
     char nome[50];
+    int phone;
     FILE *fptr;
     if ((fptr = fopen("contatos.txt","r")) == NULL) {
         printf("Erro ao abrir arquivo!\n");
         exit(1);
     }
     fscanf(fptr, "%s", nome);
-    fscanf(fptr, "%i", &phone[11]);
+    fscanf(fptr, "%i", &phone);
     printf("Nome: %s\n", nome);
     printf("Telefone: %i\n\n", phone);
     fclose(fptr);
@@ -84,7 +84,7 @@ int rm(){
 
 // carregar na tela os ctts existentes
 int load(){
-    // vo tenta fazer
+    // ctz q tem que ter isso?
 }
 
 // func principal, raiz... onde vai ser tudo jogado, bjs
