@@ -88,14 +88,13 @@ int load(){
         printf("Erro ao abrir arquivo!\n");
         exit(1);
     }
-    
+     
     printf("Contatos: \n");
-    fscanf(fptr, "%s %d", nome, &phone);
-    printf("Nome: %s \t Numero: %d \n\n", nome, phone);
-    
+    while(fscanf(fptr, "%s %d", nome, &phone) != EOF){      // enquanto os registros não estiverem no fim do arquivo, n for o último, ele continua dando printf no ctt
+        printf("Nome: %s \n Numero: %d \n\n", nome, phone);
+    }
     
     fclose(fptr);
-    
 }
 
 // func principal, raiz... onde vai ser tudo jogado, bjs
