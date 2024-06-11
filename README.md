@@ -19,7 +19,7 @@ Trabalho de Sistemas Operacionais + Fundamentos da Programação:
 
 <a href="https://catolicasc-my.sharepoint.com/:w:/g/personal/gabrieli_lembeck_catolicasc_edu_br/Ec05kPTnliRItbwS3v7voE4BozN1vK5pmy1RYHDbIQr3gw?e=BIfhWj">Exemplos profº, Manipulação de Arquivos e Memória no LINUX (C)</a>
 
-## Consultas:
+## Compilador:
 
 <a href="https://www.onlinegdb.com/online_c_compiler#">Online C Compiler, onde testamos</a> <- estamos fazendo este 1/2 da N3 no trabalho... e não é possível instalar uma VM d debian
 
