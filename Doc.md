@@ -54,7 +54,7 @@ funções criadas e puxadas em seus devidos locais
 `FILE *` aponta para um arquivo específico, definido pelo usuário<br><br>
 
 <b>EXEMPLO:</b><br>
-`FILE *arquivo<br>arquivo = fopen("meuArquivo.bin","rb")`<br><br>
+`FILE *arquivo` <br> `arquivo = fopen("meuArquivo.bin","rb")`<br><br>
 
 No exemplo acima, `arquivo` aponta para a seguinte declaração `fopen("meuArquivo.bin","rb")`, <br>
 com isto, o arquivo `meuArquivo` definido por `arquivo` é aberto.
