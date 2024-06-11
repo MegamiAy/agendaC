@@ -10,8 +10,8 @@ int rm();
 int load();
 
 // declarando as variáveis
-char nome[50];
-int phone, op;
+char nome[50], phone[14];
+int op;
 
 // menu de ações
 int menu(){
@@ -29,7 +29,7 @@ int menu(){
             rm();
             break;
         case 4:
-            printf("Saindo do programa...");
+            load();
             break;
         case 5:
             printf("Saindo do programa...");
@@ -54,9 +54,9 @@ int add(){
     scanf("%s", nome);
     fflush(stdin);
     printf("Telefone: ");
-    scanf("%d", &phone);
+    scanf("%s", phone);
     fflush(stdin);
-    fprintf(fptr, "Nome: %s \t Numero: %d \n\n", nome, phone);
+    fprintf(fptr, "Nome: %s \t Numero: %s \n\n", nome, phone);
     fclose(fptr);
     
     return 0;
@@ -70,9 +70,9 @@ int consul(){
         exit(1);
     }
     fscanf(fptr, "%s", nome);
-    fscanf(fptr, "%i", &phone);
+    fscanf(fptr, "%s", phone);
     printf("Nome: %s\n", nome);
-    printf("Telefone: %i\n\n", phone);
+    printf("Telefone: %s\n\n", phone);
     fclose(fptr);
     return 0;
 }
@@ -93,8 +93,8 @@ int load(){
     }
     
     printf("Contatos: \n");
-    while(fscanf(fptr, "%s %d", nome, &phone) != EOF){      
-        printf("Nome: %s \n Numero: %d \n\n", nome, phone);
+    while(fscanf(fptr, "%s %s", nome, phone) != EOF){      
+        printf("Nome: %s \n Numero: %s \n\n", nome, phone);
     }
 }
 
