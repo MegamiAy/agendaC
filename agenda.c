@@ -100,8 +100,52 @@ int consul(){
 }
         
 
-// remover um contato existente
+// remover um contato existente - EM ANDAMENTO
 int rm(){
+    char n_pesq[50];
+    int c_existe = 0;
+    FILE *fptr;
+
+    printf("Nome do contato que deseja remover: ");
+    scanf("%s", n_pesq);
+
+    if ((fptr = fopen("contatos.bin","rb")) == NULL) {
+        printf("Erro ao abrir arquivo!\n");
+        return 1;
+    }
+    while(fread(&contato, sizeof(Contato), 1, fptr)){
+        if(strcmp(contato.nome, n_pesq) == 0){
+            printf("Nome: %s\nTelefone: %s\n\n", contato.nome, contato.fone);
+            c_existe = 1;
+            int opR = 0;
+            printf("Deseja realmente remover este contato?\n1. Sim\n2. Nao\n");
+            scanf("%i", &opR);
+            switch (opR)
+            {
+            case 1:
+                // remover contato
+                fwrite(&contato, sizeof(Contato), 1, fptr);
+
+                // printf("\nContato removido.\n\n");
+                break;
+            case 2:
+                printf("\nAção cancelada.\n\n");
+                break;
+            default:
+                printf("\nOpção inválida.\n\n");
+                break;
+            }
+            break;
+        }
+    }
+    if(c_existe == 0){
+        printf("Contato nao existe...\n");
+        return 1;
+    }
+
+    fclose(fptr);
+    return 0;
+
     
 }
 
@@ -114,10 +158,12 @@ int load(){
         exit(1);
     }
     
-    printf("Contatos: \n");
-    while(fscanf(fptr, "%s %s", contato.nome, contato.fone) != EOF){      
+    printf("\n=========\nContatos: \n\n");  
+    while(fread(&contato, sizeof(Contato), 1, fptr)){    
         printf("Nome: %s \nNumero: %s \n\n", contato.nome, contato.fone);
     }
+    fclose(fptr);
+    return 0;
 }
 
 // função principal, raiz
