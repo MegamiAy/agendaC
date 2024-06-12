@@ -40,20 +40,33 @@ funções criadas e puxadas em seus devidos locais
 
 ## Estrutura Final
 ```
-bibliotecas
+> bibliotecas
 
-struct definição dos tipos
+> struct definição dos tipos
 
-prototipagem de funções
+> prototipagem de funções
+    > identificação delas... dizendo que elas existem
 
-setando a coleção de dados = Contatos
-setando a variável de opções
+> setando a coleção de dados = Contatos
+> setando a variável de opções
 
-primeira função, responsável por criar o menu e chamar as outras funções
+> primeira função,
+    > responsável por criar o menu e chamar as outras funções
 
-segunda função, responsável por adicionar um contato
+> segunda função,
+    > responsável por adicionar um contato
 
-terceia função, responsável por fazer uma consulta nos contatos existentes
+> terceia função,
+    > responsável por fazer uma consulta nos contatos existentes
+
+> quarta função,
+    > responsável por listar todo o banco de contatos registrados e ativos
+
+> quinta função,
+    > responsável por deletar um contato específico
+
+> sexta função,
+    > responsável por puxar o menu, é o ponto de entrada do programa
 
 ```
 
