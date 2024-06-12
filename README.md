@@ -9,8 +9,8 @@ Trabalho de Sistemas Operacionais + Fundamentos da Programação:
 * Adicionar um contato: 2 pontos
 * Consultar um contato: 2 pontos
 * Excluir um contato: 2 pontos
-* Persistência de dados: Você deve persistir os dados em um arquivo binário - 2 pontos.
-* Sistema de menus: Crie um sistema de menus que permita aos usuários escolher as opções para fazer, pesquisar e excluir contatos. - 2 pontos
+* Persistência de dados (em arquivo binário): 2 pontos.
+* Sistema de menus: 2 pontos
 
 ## Consultas:
 
