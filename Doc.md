@@ -38,21 +38,23 @@ funções criadas e puxadas em seus devidos locais
 
 ## Funções do CANSI
 
-* `fopen()` -> abre um arquivo
-* `fwrite()` -> escreve em um arquivo
-* `fread()` -> lê o arquivo
+* `fopen()` -> abre um arquivo 
+* `fwrite()` -> escreve em um arquivo (bin)
+* `fprintf` -> imprime (escreve) em um arquivo (txt)
+* `fread()` -> lê o arquivo (bin)
+* `fscanf()` -> lê dados formatados em um arquivo (txt)
 * `fclose()` -> fecha o arquivo
 * `sizeof()` -> determina tamanho do dado/aloca memória
 * `strcmp()` -> compara duas strings
 
 ### Formas de abrir arquivos
 
-* `fopen("contatos.txt", "a")` -> adiciona dados do arquivo
-* `fopen("contatos.bin", "ab")` -> adiciona dados do arquivo binário
-* `fopen("contatos.txt", "w")` -> subscreve dados do arquivo
-* `fopen("contatos.bin", "wb")` -> subscreve dados do arquivo binário
-* `fopen("contatos.txt", "r")` -> lê dados do arquivo
-* `fopen("contatos.bin", "rb")` ->  lê dados do arquivo binário
+```fopen("contatos.txt", "a")``` Adiciona dados do arquivo
+```fopen("contatos.bin", "ab")``` adiciona dados do arquivo binário
+```fopen("contatos.txt", "w")```subscreve dados do arquivo
+```fopen("contatos.bin", "wb")``` subscreve dados do arquivo binário
+```fopen("contatos.txt", "r")``` lê dados do arquivo
+```fopen("contatos.bin", "rb")``` lê dados do arquivo binário
 
 ### Manipulação do FILE *arquivo
 
