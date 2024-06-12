@@ -1,7 +1,6 @@
 # Agenda Eletrônica
 > **Por:** Gabrieli Lembeck & Laiz Detros
-
-Trabalho de Sistemas Operacionais + Fundamentos da Programação
+> Trabalho de Sistemas Operacionais + Fundamentos da Programação
 
 ### Detalhes da Atribuição
 > Aqui está um detalhamento da atribuição:
