@@ -49,12 +49,35 @@ funções criadas e puxadas em seus devidos locais
 
 ### Formas de abrir arquivos
 
-```fopen("contatos.txt", "a")``` Adiciona dados do arquivo
-```fopen("contatos.bin", "ab")``` adiciona dados do arquivo binário
-```fopen("contatos.txt", "w")```subscreve dados do arquivo
-```fopen("contatos.bin", "wb")``` subscreve dados do arquivo binário
-```fopen("contatos.txt", "r")``` lê dados do arquivo
-```fopen("contatos.bin", "rb")``` lê dados do arquivo binário
+```
+fopen("contatos.txt", "a")
+```
+Adiciona dados do arquivo
+
+```
+fopen("contatos.bin", "ab")
+``` 
+Adiciona dados do arquivo binário
+
+```
+fopen("contatos.txt", "w")
+```
+subscreve dados do arquivo
+
+```
+fopen("contatos.bin", "wb")
+``` 
+subscreve dados do arquivo binário
+
+```
+fopen("contatos.txt", "r")
+```
+lê dados do arquivo
+
+```
+fopen("contatos.bin", "rb")
+```
+lê dados do arquivo binário
 
 ### Manipulação do FILE *arquivo
 
