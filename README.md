@@ -22,6 +22,8 @@ Trabalho de Sistemas Operacionais + Fundamentos da Programação:
 
 <a href="https://github.com/gregori/exercicios_c_arquivos">Exemplos profº - GitHub</a>
 
+<a href="https://docs.google.com/document/d/1LOIsTXtziyZuwUNDS-EXJkbr_KzIQya7adjo1u5nAY8/edit?usp=sharing">Docs de Colas, Geral</a>
+
 ## Compilador:
 
 <a href="https://www.onlinegdb.com/online_c_compiler#">Online C Compiler, onde testamos</a> <- estamos fazendo este 1/2 da N3 no trabalho... e não é possível instalar uma VM d debian
