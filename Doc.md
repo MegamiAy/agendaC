@@ -19,8 +19,8 @@
 `nome` & `fone` dentro de um struct, como string (char), nome com limite e 50 e fone com limite de 14
 
 ### typedof struct (Estrutura de novo tipo)
-`typedef` -> define novo tipo de dado
-`struct` -> define uma estrutura com variáveis
+* `typedef` -> define novo tipo de dado
+* `struct` -> define uma estrutura com variáveis
 
 ## Funções
 
