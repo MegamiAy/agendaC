@@ -51,10 +51,11 @@ funções criadas e puxadas em seus devidos locais
 ### Manipulação do FILE *arquivo
 
 `FILE` é uma função da biblioteca C que trabalha com arquivos<br>
-`FILE *` aponta para um arquivo específico, definido pelo usuário<br><br>
+`FILE *` aponta para um arquivo específico, definido pelo usuário<br>
 
-<b>Exemplo:</b><br>
-`FILE *arquivo` <br> `arquivo = fopen("meuArquivo.bin","rb")`<br><br>
+```
+FILE *arquivo`arquivo = fopen("meuArquivo.bin","rb")
+```
 
 No exemplo acima, `arquivo` aponta para a seguinte declaração `fopen("meuArquivo.bin","rb")`, <br>
 com isto, o arquivo `meuArquivo` definido por `arquivo` é aberto.
