@@ -1,15 +1,16 @@
 # Agenda Eletrônica
 > **Por:** Gabrieli Lembeck & Laiz Detros
+> 
 > Trabalho de Sistemas Operacionais + Fundamentos da Programação
 
 ### Detalhes da Atribuição
-> Aqui está um detalhamento da atribuição:
+> Aqui está um detalhamento do que tem de ser feito:
 
-* Adicionar um contato: 2 pontos
-* Consultar um contato: 2 pontos
-* Excluir um contato: 2 pontos
-* Persistência de dados (em arquivo binário): 2 pontos.
-* Sistema de menus: 2 pontos
+* Adicionar um contato: 2 pontos                           - feito
+* Consultar um contato: 2 pontos                           - feito
+* Excluir um contato: 2 pontos                             - feito?
+* Persistência de dados (em arquivo binário): 2 pontos.    - ?
+* Sistema de menus: 2 pontos                               - feito
 
 ## Consultas:
 
