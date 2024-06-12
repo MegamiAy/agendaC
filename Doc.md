@@ -38,6 +38,26 @@ funções criadas e puxadas em seus devidos locais
 
 <!-- Essas coisas não fazem parte de uma documentação, coloque no docs "Docs de Cola, Geral" -->
 
+## Estrutura Final
+```
+bibliotecas
+
+struct definição dos tipos
+
+prototipagem de funções
+
+setando a coleção de dados = Contatos
+setando a variável de opções
+
+primeira função, responsável por criar o menu e chamar as outras funções
+
+segunda função, responsável por adicionar um contato
+
+terceia função, responsável por fazer uma consulta nos contatos existentes
+
+```
+
+
 <!-- ## Funções do CANSI 
 
 * `fopen()` -> abre um arquivo 
