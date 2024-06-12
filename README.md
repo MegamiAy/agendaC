@@ -4,13 +4,17 @@
 > Trabalho de Sistemas Operacionais + Fundamentos da Programação
 
 ### Detalhes da Atribuição
-> Aqui está um detalhamento do que tem de ser feito:
+Aqui está um detalhamento do que tem de ser feito:
 
-* Adicionar um contato: 2 pontos                           - feito
-* Consultar um contato: 2 pontos                           - feito
-* Excluir um contato: 2 pontos                             - feito?
-* Persistência de dados (em arquivo binário): 2 pontos.    - ?
-* Sistema de menus: 2 pontos                               - feito
+```
+
+  - Adicionar um contato: 2 pontos                           - feito
+  - Consultar um contato: 2 pontos                           - feito
+  - Excluir um contato: 2 pontos                             - feito?
+  - Persistência de dados (em arquivo binário): 2 pontos.    - ?
+  - Sistema de menus: 2 pontos                               - feito
+
+```
 
 ## Consultas:
 
