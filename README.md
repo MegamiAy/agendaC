@@ -18,9 +18,9 @@ Trabalho de Sistemas Operacionais + Fundamentos da Programação
 
 <a href="https://docs.google.com/document/d/1h67pVIHA0RitYJLzBF8emaRSuV-nu1lqkjYoDHuQMqU/edit?usp=sharing">Docs de Colas, Funções</a>
 
-<a href="https://catolicasc-my.sharepoint.com/:w:/g/personal/gabrieli_lembeck_catolicasc_edu_br/Ec05kPTnliRItbwS3v7voE4BozN1vK5pmy1RYHDbIQr3gw?e=BIfhWj">Exemplos Sor, Manipulação de Arquivos e Memória no LINUX (C)</a>
+<a href="https://catolicasc-my.sharepoint.com/:w:/g/personal/gabrieli_lembeck_catolicasc_edu_br/Ec05kPTnliRItbwS3v7voE4BozN1vK5pmy1RYHDbIQr3gw?e=BIfhWj">Exemplos Rodrigo, Manipulação de Arquivos e Memória no LINUX</a>
 
-<a href="https://github.com/gregori/exercicios_c_arquivos">Exemplos profº - GitHub</a>
+<a href="https://github.com/gregori/exercicios_c_arquivos">Exemplos Rodrigo - GitHub</a>
 
 <a href="https://docs.google.com/document/d/1LOIsTXtziyZuwUNDS-EXJkbr_KzIQya7adjo1u5nAY8/edit?usp=sharing">Docs de Colas, Geral</a>
 
