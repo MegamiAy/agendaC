@@ -36,7 +36,9 @@ funções criadas e puxadas em seus devidos locais
 
 `Main` - Como principal, onde o menu é chamado e por sua vez, é onde tudo ocorre
 
-## Funções do CANSI
+<!-- Essas coisas não fazem parte de uma documentação, coloque no docs "Docs de Cola, Geral" -->
+
+<!-- ## Funções do CANSI 
 
 * `fopen()` -> abre um arquivo 
 * `fwrite()` -> escreve em um arquivo (bin)
@@ -67,4 +69,4 @@ arquivo = fopen("meuArquivo.bin","rb");
 ```
 
 No exemplo acima, `arquivo` aponta para a seguinte declaração `fopen("meuArquivo.bin","rb")`, <br>
-com isto, o arquivo `meuArquivo` definido por `arquivo` é aberto.
+com isto, o arquivo `meuArquivo` definido por `arquivo` é aberto. -->
