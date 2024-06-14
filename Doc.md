@@ -37,6 +37,7 @@ funções criadas e puxadas em seus devidos locais
 `Main` - Como principal, onde o menu é chamado e por sua vez, é onde tudo ocorre
 
 <!-- Essas coisas não fazem parte de uma documentação, coloque no docs "Docs de Cola, Geral" -->
+<!-- :P não tenho acesso, paia -->
 
 ## Estrutura Final
 ```
