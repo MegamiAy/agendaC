@@ -99,6 +99,16 @@ int consul(){
     return 0;
 }
         
+/*
+size = 6;
+numbers = [1, 2, 4, 87, 10]
+
+numbers[3] = numbers[6-1]
+
+size -- => size = 5
+
+*/
+
 
 // remover um contato existente - EM ANDAMENTO
 int rm(){
@@ -106,6 +116,8 @@ int rm(){
     int c_existe = 0;
     FILE *fptr, *temp;
     Contato temp_contato;
+    /* Contato contatos[200]; */
+    /* int index = 0; */
 
     printf("Nome do contato que deseja remover: ");
     scanf("%s", n_pesq);
@@ -142,6 +154,7 @@ int rm(){
                     break;
             }
         } else {
+            /* contatos[index++] = contato; */
             fwrite(&contato, sizeof(Contato), 1, temp);
         }
     }
@@ -153,6 +166,12 @@ int rm(){
     fclose(temp);
     remove("contatos.bin");
     rename("temp.bin", "contatos.bin");
+
+    /* for (int i = 0; i < index; i++) {
+        fwrite(&contatos[i], sizeof(Contato), 1, fptr);
+    }
+        fwrite(contatos, sizeof(Contato), index; fptr);
+    */
 
     return 0;
 }
