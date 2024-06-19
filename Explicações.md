@@ -27,10 +27,10 @@ Dizem ao computador como lidar com diferentes partes do programa, por exemplo:
 - `string.h` ajuda a trabalhar com textos -> ;
 
 ### Sctruct
-É usado para definir um novo tipo de dados que combina vários tipos diferentes em uma única estrutura; <br>
-    - `typedef`: indica que estamos definindo um novo tipo.
-    - `struct {}`: define a estrutura de dados, que neste caso contém dois membros: nome (uma string de até 50 caracteres) e fone (uma string de até 14 caracteres).
-    - `Contato`: nome do novo tipo que estamos definindo usando typedef.
+É usado para definir um novo tipo de dados que combina vários tipos diferentes em uma única estrutura;
+- `typedef`: indica que estamos definindo um novo tipo.
+- `struct {}`: define a estrutura de dados, que neste caso contém dois membros: nome (uma string de até 50 caracteres) e fone (uma string de até 14 caracteres).
+- `Contato`: nome do novo tipo que estamos definindo usando typedef.
 
 ### Prototipagem
 É onde se declara para o programa que vão existir/ser usadas cinco funções diferentes.
