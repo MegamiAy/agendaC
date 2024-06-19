@@ -27,6 +27,10 @@ Dizem ao computador como lidar com diferentes partes do programa, por exemplo:
 - `string.h` ajuda a trabalhar com textos -> ;
 
 ### Sctruct
+É usado para definir um novo tipo de dados que combina vários tipos diferentes em uma única estrutura; <br>
+    - `typedef`: indica que estamos definindo um novo tipo.
+    - `struct {}`: define a estrutura de dados, que neste caso contém dois membros: nome (uma string de até 50 caracteres) e fone (uma string de até 14 caracteres).
+    - `Contato`: nome do novo tipo que estamos definindo usando typedef.
 
 ### Prototipagem
 É onde se declara para o programa que vão existir/ser usadas cinco funções diferentes.
@@ -231,4 +235,75 @@ Permite carregar todos os contatos que existem no arquivo `contatos.bin`.
 #
 
 ### O que cada coisa faz?
-- `fptr` é uma variável do tipo `FILE`, que é usada para manipular arquivos em  C.
+1. `fptr` é uma variável do tipo `FILE`, que é usada para manipular arquivos em  C.
+    - `FILE *`: é um tipo de dado em C que representa um arquivo;
+    - `Fptr`: é o nome de variável que pode ser qualquer coisa, mas é mais comum usar fptr (que significa "file pointer").
+    - `*`: indica que a variável é um ponteiro, ou seja, uma variável que contém um endereço de momória de outra variável
+      
+**Exemplos de uso:**
+```
+    FILE *fptr;  // Declaração de uma variável do tipo FILE *
+    
+    fptr = fopen("contatos.bin", "rb");  // Abre o arquivo "contatos.bin" para leitura binária
+    
+    fclose(fptr);  // Fecha o arquivo
+```
+
+2. `fopen` e `fclose`.
+    - `fopen`: função usada para abrir um arquivo em C. ela tem que receber o nome do documento + o modo de abertura
+          - `r` para ler
+          - `w` para escrever
+          - `a` para anexar
+          - ...
+    - `fclose`: função usada para fechar um arquivo que foi aberto anteriormente com o fopen.
+      
+**Exemplos de uso:**
+```
+    FILE *arquivo = fopen("dados.txt", "r");
+```
+```
+    fclose(arquivo);
+```
+
+3. `fwrite` e `fread`.
+    - `fwrite`: função usada para escrever dados em um arquivo binário. ela tem que receber um ponteiro para os dados serem escritos, o tamanho de cada elemento, o número  de elementos e um ponteiro para o arquivo
+    - `fread`: função usada para ler dadis de um arquivo binário. ela tem que receber um ponteiro para armazenar os dados lidos, o tamanho de cada elemento a ser lido, o número de elementos e um ponteiro para o  arquivo
+      
+**Exemplos de uso:**
+```
+    fwrite(&contato, sizeof(Contato), 1, fptr);
+```
+```
+    fread(&contato, sizeof(Contato), 1, fptr);
+```
+
+4. `sizeof`
+    - `sizeof`: operador qye retorna o tamanho em bytes de um tipo de dados ou de uma variável. pode ser usado como tipo de dados primitivos, tipo: int, char, etc... ou com estruturas, tipo: Structs
+
+**Exemplos de uso:**
+```
+    sizeof(int);     // Retorna o tamanho de um inteiro em bytes
+    sizeof(Contato); // Retorna o tamanho da estrutura Contato em bytes
+```
+
+5. `remove` e `rename`.
+    - `remove`: função usada para excluir um arquivo;
+    - `rename`: função usada para renomear um arquivo.
+      
+**Exemplos de uso:**
+```
+    remove("arquivo.txt");
+```
+```
+    rename("antigo.txt", "novo.txt");
+```
+
+6. `strcmp`
+    - `strcmp`: função usada para comparar duas strings. Retorna um valor inteiro que indica se as strings são iguais (`0`), se a primeira é maior que a segunda (`> 0`), ou se a primeira é menor que a segunda (`< 0`)
+
+**Exemplos de uso:**
+```
+    if (strcmp(contato.nome, n_pesq) == 0) {
+        // As strings são iguais
+    }
+```
