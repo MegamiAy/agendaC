@@ -23,8 +23,8 @@
 ### Bibliotecas
 Dizem ao computador como lidar com diferentes partes do programa, por exemplo:
 - `stdio.h` é usada para ler e escrever coisas na tela -> `scanf()` & `printf()`;
-- `stdlib.h` ajuda a lidar com a memória do computador -> ;
-- `string.h` ajuda a trabalhar com textos -> ;
+- `stdlib.h` ajuda a lidar com a memória do computador -> `malloc`;
+- `string.h` ajuda a trabalhar com textos -> `strcpy`;
 
 ### Sctruct
 É usado para definir um novo tipo de dados que combina vários tipos diferentes em uma única estrutura;
